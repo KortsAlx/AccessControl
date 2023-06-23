@@ -1,0 +1,92 @@
+﻿@page "/dashboard"
+@using System.Globalization;
+@inject HttpClient Http
+
+<PageTitle>Home</PageTitle>
+
+<h1>DASHBOARD</h1>
+
+<p>Eventos Semana 21 15/05/2023  -  26/05/2023  </p>
+
+<div class="card-body">
+    <RadzenChart>
+        <RadzenColumnSeries Fill="#AACDBE" Data="@ichart" CategoryProperty="dateEvent" ValueProperty="normalData" Title="Entradas" LineType="LineType.Dashed" />
+        <RadzenColumnSeries Fill="#EA907A" Data="@ichart" CategoryProperty="dateEvent" ValueProperty="anormalData" Title="Salidas" LineType="LineType.Dashed" />
+        <RadzenColumnOptions Radius="6" />
+        <RadzenValueAxis>
+            <RadzenGridLines Visible="true" />
+            <RadzenAxisTitle Text="Entradas / Salidas" />
+        </RadzenValueAxis>
+    </RadzenChart>
+</div>
+
+<h1>Resumen del Sistema</h1>
+<p>Numero de dispositivos </p>
+
+<div class="container">
+    <RadzenCard class="w-100 mb-4">
+        <RadzenCheckBox @bind-Value="@showData" Name="dataLabels"></RadzenCheckBox>
+        <RadzenLabel Text="Ver Numero Total de dispositivos" For="dataLabels" Style="margin-left: 8px; vertical-align: middle;" />
+    </RadzenCard>
+    <RadzenCard>
+        <RadzenDonutSeries Data="@deviceM" CategoryProperty="name" ValueProperty="nDevice">
+      
+
+        </RadzenDonutSeries>
+    </RadzenCard>
+
+
+
+</div>
+
+@code {
+    bool showData = false;
+
+    private ItemChart[]? ichart;
+
+    private DeviceModel[]? deviceM;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        deviceM = await Http.GetFromJsonAsync<DeviceModel[]>("sample-data/devices.json");
+
+        ichart = await Http.GetFromJsonAsync<ItemChart[]>("sample-data/homedata.json");
+
+
+
+    }
+
+    public class ItemChart
+    {
+        public string idEvent { get; set; }
+        public string nameEvent { get; set; }
+        public string dateEvent { get; set; }
+        public string rangeDateTimeFrom { get; set; }
+        public string rangeDateTimeTo { get; set; }
+        public double anormalData { get; set; }
+        public double normalData { get; set; }
+        public bool status { get; set; }
+    }
+
+
+    public class DeviceModel
+    {
+        public string deviceNo { get; set; }
+        public string name { get; set; }
+        public string deviceType { get; set; }
+        public double nDevice { get; set; }
+        public bool? closeDelayEnabled { get; set; }
+    }
+
+    public class DoorModel
+    {
+        public string? doorNo { get; set; }
+
+        public string? name { get; set; }
+
+        public string? deviceType { get; set; }
+
+        public bool? closeDelayEnabled { get; set; }
+    }
+}

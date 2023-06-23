@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = AccessControlPlatform_Web
+build_property.RootNamespace = AccessControlPlatform_Web
+build_property.ProjectDir = C:\Users\corte\source\repos\AccessControl Solution\AccessControlPlatform Web\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\corte\source\repos\AccessControl Solution\AccessControlPlatform Web
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/Data/AddAppointmentpage.razor]
+build_metadata.AdditionalFiles.TargetPath = RGF0YVxBZGRBcHBvaW50bWVudHBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/Pages/AccessLevel.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjZXNzTGV2ZWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/Pages/Configuration.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZmlndXJhdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/Pages/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/Pages/EventsAccessControl.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXZlbnRzQWNjZXNzQ29udHJvbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/Pages/Person.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/Pages/Schedule.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2NoZWR1bGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-0qmg2uv6if
+
+[C:/Users/corte/source/repos/AccessControl Solution/AccessControlPlatform Web/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-nrdt88ridy

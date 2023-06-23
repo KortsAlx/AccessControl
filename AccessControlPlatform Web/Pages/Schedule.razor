@@ -1,0 +1,42 @@
+﻿@page "/schedule"
+@using AccessControlPlatform_Web.Data;
+@inject HttpClient Http
+
+<PageTitle>Calendario de eventos por día</PageTitle>
+
+<h3>Filtro a-z          </h3>
+
+
+<div class="rz-p-12">
+    <RadzenScheduler @ref=@eventss style="height: 768px;" TItem="EventsModelConverter" Data=@eventsConvert StartProperty="eventDateStartC" EndProperty="eventDateEndC">
+        <RadzenWeekView/>
+    </RadzenScheduler>
+</div>
+
+
+@code {
+    RadzenScheduler<EventsModelConverter> eventss;
+    private EventsModel[]? events;
+    IList<EventsModelConverter> eventsConvert;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        events = await Http.GetFromJsonAsync<EventsModel[]>("sample-data/events.json");
+
+        foreach (EventsModel model in events)
+        {
+            //var dateconvert = Convert.ToInt16(model.eventDateEnd.Substring(0, 4));
+            //Console.Write($"{dateconvert}");
+
+            eventsConvert.Add(new EventsModelConverter
+            {
+                    eventDateEndC = new DateTime(2023, 05, 25, 15, 20, 0),
+                    eventDateStartC = new DateTime(2023, 05, 25, 01, 20, 0),
+                    name = model.name                
+            });
+
+        }
+
+    }
+}

@@ -1,0 +1,63 @@
+﻿@page "/"
+@inject HttpClient Http
+
+
+<PageTitle>Agregar</PageTitle>
+
+<h1>Agregar nuevo dispositivo</h1>
+
+Puedes agregar un dispositivo dando click
+
+<RadzenButton Text="Agregar" />
+
+
+<p>DISPOSITIVOS</p>
+
+@if (devicemodel == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Device N°</th>
+                <th>Nombre</th>
+                <th>Tipo dispositivo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var device in devicemodel)
+            {
+                <tr>
+                    <td>@device.deviceNo</td>
+                    <td>@device.name</td>
+                    <td>@device.deviceType</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private DeviceModel[]? devicemodel;
+
+    protected override async Task OnInitializedAsync()
+    {
+        devicemodel = await Http.GetFromJsonAsync<DeviceModel[]>("sample-data/devices.json");
+
+    }
+
+    public class DeviceModel
+    {
+        public string? deviceNo { get; set; }
+
+        public string? name { get; set; }
+
+        public string? deviceType { get; set; }
+
+        public bool? closeDelayEnabled { get; set; }
+    }
+}
+

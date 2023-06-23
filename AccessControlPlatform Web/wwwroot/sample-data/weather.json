@@ -1,0 +1,20 @@
+﻿[
+  {
+    "employeeNo": "0005",
+    "name": "Brandon",
+    "userType": "normal",
+    "closeDelayEnabled": false
+  },
+  {
+    "employeeNo": "100",
+    "name": "Valeria Salazar",
+    "userType": "normal",
+    "closeDelayEnabled": false
+  },
+  {
+    "employeeNo": "100",
+    "name": "Valeria Salazar",
+    "userType": "normal",
+    "closeDelayEnabled": false
+  }
+]

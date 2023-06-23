@@ -1,0 +1,122 @@
+﻿[
+  {
+    "idEvent": "0001",
+    "nameEvent": "Eventos",
+    "dateEvent": "15-05-2023",
+    "rangeDateTimeFrom": "15-05-2023 00:00:00",
+    "rangeDateTimeTo": "15-05-2023 23:59:59",
+    "anormalData": 30,
+    "normalData": 30,
+    "status": true
+  },
+  {
+    "idEvent": "0002",
+    "nameEvent": "Eventos",
+    "dateEvent": "16-05-2023",
+    "rangeDateTimeFrom": "16-05-2023 00:00:00",
+    "rangeDateTimeTo": "16-05-2023 23:59:59",
+    "anormalData": 26,
+    "normalData": 26,
+    "status": true
+  },
+  {
+    "idEvent": "0003",
+    "nameEvent": "Eventos",
+    "dateEvent": "17-05-2023",
+    "rangeDateTimeFrom": "17-05-2023 00:00:00",
+    "rangeDateTimeTo": "17-05-2023 23:59:59",
+    "anormalData": 11,
+    "normalData": 12,
+    "status": true
+  },
+  {
+    "idEvent": "0004",
+    "nameEvent": "Eventos",
+    "dateEvent": "18-05-2023",
+    "rangeDateTimeFrom": "18-05-2023 00:00:00",
+    "rangeDateTimeTo": "18-05-2023 23:59:59",
+    "anormalData": 20,
+    "normalData": 20,
+    "status": true
+  },
+  {
+    "idEvent": "0005",
+    "nameEvent": "Eventos",
+    "dateEvent": "19-05-2023",
+    "rangeDateTimeFrom": "19-05-2023 00:00:00",
+    "rangeDateTimeTo": "19-05-2023 23:59:59",
+    "anormalData": 8,
+    "normalData": 8,
+    "status": true
+  },
+  {
+    "idEvent": "0006",
+    "nameEvent": "Eventos",
+    "dateEvent": "20-05-2023",
+    "rangeDateTimeFrom": "20-05-2023 00:00:00",
+    "rangeDateTimeTo": "20-05-2023 23:59:59",
+    "anormalData": 11,
+    "normalData": 11,
+    "status": true
+  },
+  {
+    "idEvent": "0007",
+    "nameEvent": "Eventos",
+    "dateEvent": "21-05-2023",
+    "rangeDateTimeFrom": "21-05-2023 00:00:00",
+    "rangeDateTimeTo": "21-05-2023 23:59:59",
+    "anormalData": 2,
+    "normalData": 2,
+    "status": true
+  },
+  {
+    "idEvent": "0008",
+    "nameEvent": "Eventos",
+    "dateEvent": "22-05-2023",
+    "rangeDateTimeFrom": "22-05-2023 00:00:00",
+    "rangeDateTimeTo": "22-05-2023 23:59:59",
+    "anormalData": 2,
+    "normalData": 1,
+    "status": true
+  },
+  {
+    "idEvent": "0009",
+    "nameEvent": "Eventos",
+    "dateEvent": "23-05-2023",
+    "rangeDateTimeFrom": "23-05-2023 00:00:00",
+    "rangeDateTimeTo": "23-05-2023 23:59:59",
+    "anormalData": 10,
+    "normalData": 10,
+    "status": true
+  },
+  {
+    "idEvent": "0010",
+    "nameEvent": "Eventos",
+    "dateEvent": "24-05-2023",
+    "rangeDateTimeFrom": "24-05-2023 00:00:00",
+    "rangeDateTimeTo": "24-05-2023 23:59:59",
+    "anormalData": 15,
+    "normalData": 15,
+    "status": true
+  },
+  {
+    "idEvent": "0011",
+    "nameEvent": "Eventos",
+    "dateEvent": "25-05-2023",
+    "rangeDateTimeFrom": "25-05-2023 00:00:00",
+    "rangeDateTimeTo": "25-05-2023 23:59:59",
+    "anormalData": 20,
+    "normalData": 19,
+    "status": true
+  },
+  {
+    "idEvent": "0012",
+    "nameEvent": "Eventos",
+    "dateEvent": "26-05-2023",
+    "rangeDateTimeFrom": "26-05-2023 00:00:00",
+    "rangeDateTimeTo": "26-05-2023 23:59:59",
+    "anormalData": 35,
+    "normalData": 32,
+    "status": true
+  }
+]

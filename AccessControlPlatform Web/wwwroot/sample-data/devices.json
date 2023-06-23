@@ -1,0 +1,23 @@
+﻿[
+  {
+    "deviceNo": "0004",
+    "name": "Macro 1",
+    "nDevice": 40,
+    "deviceType": "AccessControl",
+    "closeDelayEnabled": false
+  },
+  {
+    "deviceNo": "0008",
+    "name": "Macro 2",
+    "nDevice": 20,
+    "deviceType": "AccessControl",
+    "closeDelayEnabled": true
+  },
+  {
+    "deviceNo": "0009",
+    "name": "Tutipark 3",
+    "nDevice": 10,
+    "deviceType": "AccessControl",
+    "closeDelayEnabled": false
+  }
+]

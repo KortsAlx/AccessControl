@@ -1,0 +1,34 @@
+﻿@page "/configuration"
+@inject HttpClient Http
+
+<PageTitle>Ajustes</PageTitle>
+
+<h1>Visualización de configuración y consumo del API</h1>
+
+<p>OPEN API</p>
+
+<RadzenButton Text="Configuración por HikCentral" />
+
+
+<RadzenButton Text="Configuración por ISUP" />
+
+@code {
+    private EmployeeModel[]? forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<EmployeeModel[]>("sample-data/weather.json");
+
+    }
+
+    public class EmployeeModel
+    {
+        public string? employeeNo { get; set; }
+
+        public string? name { get; set; }
+
+        public string? userType { get; set; }
+
+        //public bool? closeDelayEnabled { get; set; }
+    }
+}

@@ -1,0 +1,90 @@
+﻿[
+  {
+    "eventNo": "0003",
+    "name": "Ingreso",
+    "eventType": "open",
+    "eventDateStart": "2023-05-15 13:55:15",
+    "eventDateEnd": "2023-05-15 16:02:10",
+    "closeDelayEnabled": false
+  },
+  {
+    "eventNo": "0004",
+    "name": "Ingreso",
+    "eventType": "open",
+    "eventDateStart": "2023-05-16 03:10:25",
+    "eventDateEnd": "2023-05-16 13:51:10",
+    "closeDelayEnabled": false
+  },
+  {
+    "eventNo": "0005",
+    "name": "Ingreso",
+    "eventType": "open",
+    "eventDateStart": "2023-05-15 03:50:25",
+    "eventDateEnd": "2023-05-17 17:52:51",
+    "closeDelayEnabled": false
+  },
+  {
+    "eventNo": "0005",
+    "name": "Ingreso",
+    "eventType": "open",
+    "eventDateStart": "2023-05-15 03:50:25",
+    "eventDateEnd": "2023-05-17 17:52:51",
+    "closeDelayEnabled": false
+  },
+  {
+    "eventNo": "0009",
+    "name": "Ingreso",
+    "eventType": "open",
+    "eventDateStart": "2023-05-15 03:10:25",
+    "eventDateEnd": "2023-05-17 13:51:10",
+    "closeDelayEnabled": false
+  },
+  {
+    "eventNo": "0018",
+    "name": "Ingreso",
+    "eventType": "open",
+    "eventDateStart": "2023-05-20 03:50:55",
+    "eventDateEnd": "2023-05-20 16:20:50",
+    "closeDelayEnabled": false
+  },
+  {
+    "eventNo": "0019",
+    "name": "Ingreso",
+    "eventType": "open",
+    "eventDateStart": "2023-05-21 05:01:20",
+    "eventDateEnd": "2023-05-21 18:50:10",
+    "closeDelayEnabled": false
+  },
+  {
+    "eventNo": "0020",
+    "name": "Ingreso",
+    "eventType": "open",
+    "eventDateStart": "2023-05-22 06:55:22",
+    "eventDateEnd": "2023-05-22 20:55:59",
+    "closeDelayEnabled": false
+  },
+  {
+    "eventNo": "0021",
+    "name": "Ingreso",
+    "eventType": "open",
+    "eventDateStart": "2023-05-23 13:58:59",
+    "eventDateEnd": "2023-05-23 19:20:15",
+    "closeDelayEnabled": false
+  },
+  {
+    "eventNo": "0022",
+    "name": "Ingreso",
+    "eventType": "open",
+    "eventDateStart": "2023-05-24 18:01:05",
+    "eventDateEnd": "2023-05-24 22:50:10",
+    "closeDelayEnabled": false
+  },
+  {
+    "eventNo": "0023",
+    "name": "Ingreso",
+    "eventType": "open",
+    "eventDateStart": "2023-05-25 02:30:15",
+    "eventDateEnd": "2023-05-25 17:55:12",
+    "closeDelayEnabled": false
+  }
+]

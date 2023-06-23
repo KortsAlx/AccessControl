@@ -1,0 +1,58 @@
+﻿@page "/fetchdata"
+@inject HttpClient Http
+
+<PageTitle>Control de acceso</PageTitle>
+
+<h1>Visualización de datos</h1>
+
+<p>EMPLEADOS</p>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Emppleado N°</th>
+                <th>Nombre</th>
+                <th>Tipo usuario</th>
+                <th>Valido</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forecast in forecasts)
+            {
+                <tr>
+                    <td>@forecast.employeeNo</td>
+                    <td>@forecast.name</td>
+                    <td>@forecast.userType</td>
+                    <td>@forecast.userType</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private EmployeeModel[]? forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<EmployeeModel[]>("sample-data/weather.json");
+    
+    }
+
+    public class EmployeeModel
+    {
+        public string? employeeNo { get; set; }
+
+        public string? name { get; set; }
+
+        public string? userType { get; set; }
+
+        //public bool? closeDelayEnabled { get; set; }
+    }
+}

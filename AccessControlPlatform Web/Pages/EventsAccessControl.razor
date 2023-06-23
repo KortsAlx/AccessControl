@@ -1,0 +1,48 @@
+﻿@page "/eventsaccesscontrol"
+@using AccessControlPlatform_Web.Data;
+@inject HttpClient Http
+
+<PageTitle>Eventos Registrados</PageTitle>
+
+<h3>Monitoreo de eventos</h3>
+
+<p>Eventos</p>
+
+@if (events == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Evento N°</th>
+                <th>Descripciòn</th>
+                <th>Fecha Inicio</th>
+                <th>Fecha Final</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var events in events)
+            {
+                <tr>
+                    <td>@events.eventNo</td>
+                    <td>@events.name</td>
+                    <td>@events.eventDateStart</td>
+                    <td>@events.eventDateEnd</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private EventsModel[]? events;
+
+    protected override async Task OnInitializedAsync()
+    {
+        events = await Http.GetFromJsonAsync<EventsModel[]>("sample-data/events.json");
+
+    }
+}
